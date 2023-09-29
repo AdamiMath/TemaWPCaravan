@@ -12,9 +12,9 @@ function the_field($key, $page_id = 0){
 
 add_action('cmb2_admin_init', 'cmb2_fields_init');
 function cmb2_fields_init(){
-    $caravan = new_cmb2_box([
+    $h1Vantagens = new_cmb2_box([
         'id' => 'home_box',
-        'title' => 'home',
+        'title' => 'Elementos da Pagina Home - Titulos Vantagens',
         'object_types' => ['page'],
         'show on' => [
             'key' => 'page-template',
@@ -22,11 +22,40 @@ function cmb2_fields_init(){
         ],
     ]);
 
-    $caravan->add_field([
-        'name' => 'vantagens',
-        'id' => 'vantagem',
+    $h1 = $h1Vantagens->add_field([
+        'name' => 'Títulos Vantagens',
+        'id' => 'vantagensh1',
+        'type' => 'group',
+        'repeatable' => true,
+        'options' => [
+            'group_title' => 'Titulos H1 Vantagens {#}',
+
+        ],
+    ]);
+
+    $h1Vantagens->add_group_field($h1, [
+        'name' => 'Titulo',
+        'id' => 'titulovantagem',
         'type' => 'text',
     ]);
+
+    $h1Vantagens->add_group_field($h1, [
+        'name' => 'Descrição Vantagens',
+        'id' => 'descricaovantagem',
+        'type' => 'text',
+    ]);
+
+    $h1Vantagens->add_group_field($h1, [
+        'name' => 'icones',
+        'id' => 'iconesvantagem',
+        'type' => 'file',
+        'options' => [
+            'url' => false,
+        ],
+    ]);
+
+    
+
 }
 
 

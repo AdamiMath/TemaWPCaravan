@@ -37,7 +37,7 @@
     </div>
 
     <div class="text-center py-3 bg-dark">
-      <p class="text-white mb-0">Caravan Tema. 2023. Alguns direitos reservados</p>
+      <p class="text-white mb-0">Caravan Tema <?php echo date("Y") ?>. Alguns direitos reservados</p>
     </div>
 
     <!-- Footer WP -->

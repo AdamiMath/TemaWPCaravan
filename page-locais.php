@@ -14,6 +14,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md">
+          <!-- -->
           <img class="img-fluid mb-4" src="<?php echo get_stylesheet_directory_uri(); ?>/img/local/foto-1.jpg" alt="cidade de Dublin">
           <img class="img-fluid mb-4" src="<?php echo get_stylesheet_directory_uri(); ?>/img/local/foto-2.jpg" alt="cidade de Dublin">
           
