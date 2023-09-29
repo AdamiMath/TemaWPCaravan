@@ -1,4 +1,11 @@
+<?php 
+
+//Template Name: Planos
+
+?>
+
 <?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <section>
     <div class="row bg-dark text-white container-fluid p-0 m-auto">
       <div class="col-lg-7 p-0">
@@ -132,11 +139,7 @@
  
 <!-- Começo do Footer-->
 <?php get_footer(); ?>
-
-  <script src="./js/jquery-3.3.1.slim.min.js"></script>
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/script.js"></script>
+<?php endwhile; else: endif?>
 </body>
 
 </html>

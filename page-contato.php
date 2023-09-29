@@ -1,8 +1,15 @@
+<?php 
+
+//Template Name: Contato
+
+?>
+
 <?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <section class="container">
     <div class="my-5 text-center">
       <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
-      <h2 class="display-4">Fale Conosoco</h2>
+      <h2 class="display-4"><?php the_title() ?></h2>
     </div>
     <div class="row">
       <div class="col-lg">
@@ -24,7 +31,7 @@
       </div>
       <div class="col-lg">
         <h2 class="h6">NOSSO ENDEREÇO</h2>
-        <img class="img-fluid box-shadown rounded mb-4" src="./img/mapa.png" alt="mapa da localização">
+        <img class="img-fluid box-shadown rounded mb-4" src="<?php echo get_stylesheet_directory_uri(); ?>/img/mapa.png" alt="mapa da localização">
         <h2 class="h6">DADOS DE CONTATO</h2>
             <ul class="list-unstyled text-seconday">
               <li>caravan@caravan.com.br</li>
@@ -85,11 +92,8 @@
   </section>
 
   <?php get_footer(); ?>
-
-  <script src="./js/jquery-3.3.1.slim.min.js"></script>
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/script.js"></script>
 </body>
+
+<?php endwhile; else: endif?>
 
 </html>

@@ -1,4 +1,13 @@
-Com <?php get_header(); ?>
+<?php 
+
+//Template Name: inscricao
+
+?>
+
+
+
+<?php get_header(); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <section class="container">
     <div class="my-5 text-center">
       <span class="h6 ">TUDO DE MELHOR PARA VOCÊ!</span>
@@ -159,11 +168,8 @@ Com <?php get_header(); ?>
   </section>
 
   <?php get_footer(); ?>
+  <?php endwhile; else: endif?>
 
-  <script src="./js/jquery-3.3.1.slim.min.js"></script>
-  <script src="./js/popper.min.js"></script>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/script.js"></script>
 </body>
 
 </html>

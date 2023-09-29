@@ -5,18 +5,18 @@
           <div class="col-md-3 col-6">
             <h4 class="h6 alert-link">PÁGINAS</h4>
             <ul class="list-unstyled" role="alert">
-              <li><a href="planos.html" style="color: black;">Planos</a></li>
-              <li><a href="planos.html" style="color: black;">Increva-se</a></li>
-              <li><a href="planos.html" style="color: black;">Contato</a></li>
+              <li><a href="/caravan.local/planos" style="color: black;">Planos</a></li>
+              <li><a href="/caravan.local/inscricao" style="color: black;">Increva-se</a></li>
+              <li><a href="/caravan.local/contato" style="color: black;">Contato</a></li>
             </ul>
           </div>
  
           <div class="col-md-3 col-6">
             <h4 class="h6 alert-link">LOCAIS</h4>
             <ul class="list-unstyled">
-              <li><a href="planos.html" style="color: black;">California</a></li>
-              <li><a href="planos.html" style="color: black;">Paris</a></li>
-              <li><a href="planos.html" style="color: black;">Dublin</a></li>
+              <li><a href="/caravan.local/locais" style="color: black;">California</a></li>
+              <li><a href="/caravan.local/locais" style="color: black;">Paris</a></li>
+              <li><a href="/caravan.local/locais" style="color: black;">Dublin</a></li>
             </ul>
           </div>
 

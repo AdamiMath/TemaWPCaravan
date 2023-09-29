@@ -62,25 +62,30 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active dropdown">
-          <a href="#" class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Locais</a>
+          <a href="/caravan.local/locais" class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Locais</a>
           <div class="dropdown-menu" aria-labelledby="navbarScrollingDropdown" style="background-color: blanchedalmond;">
-            <a href="locais.php" class="dropdown-item">California</a>
-            <a href="locais.php" class="dropdown-item">Paris</a>
-            <a href="locais.php" class="dropdown-item">Doublin</a>
+            <a href="/caravan.local/locais" class="dropdown-item">California</a>
+            <a href="/caravan.local/locais" class="dropdown-item">Paris</a>
+            <a href="/caravan.local/locais" class="dropdown-item">Doublin</a>
           </div>
         </li>
         <li class=" nav-item active">
-          <a href="planos.php" class="nav-link">Planos</a>
+          <a href="/caravan.local/planos" class="nav-link">Planos</a>
         </li>
         <li class="nav-item active">
-          <a href="contato.php" class="nav-link">Contato</a>
+          <a href="/caravan.local/contato" class="nav-link">Contato</a>
         </li>
         <li class="nav-item active">
           <a href="" data-toggle="modal"  data-target="#modalLogin" class="nav-link">Login<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a href="inscricao.php" class="btn btn-outline-secondary ml-md-3">Inscreva-se</a>
+          <a href="/caravan.local/inscricao" class="btn btn-outline-secondary ml-md-3">Inscreva-se</a>
         </li>
       </ul>
     </div>
   </nav>
+
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/popper.min.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js"></script>
+  <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
