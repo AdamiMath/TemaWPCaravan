@@ -83,7 +83,7 @@
           <div class="d-flex justify-content-center" style="height: 100px;">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icones/passagens.svg" alt="Passaporte" srcset="">
           </div>
-          <h3>Passagens</h3>
+          <h3><?php the_field('vantagem'); ?></h3>
           <p>Máxima confiança na compra das passagens</p>
         </div>
 
