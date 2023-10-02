@@ -72,10 +72,13 @@
 
       <div class="row">
         <div class="col-xl-4 col-md-6">
+          <?php $h1 = get_field('vantagensh1') ;
+          if(isset($h1)) {foreach($h1 as $vantagens){
+          ?>
           <div class="d-flex justify-content-center" style="height: 100px;">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icones/passaporte.svg" alt="Passaporte" srcset="">
           </div>
-          <h3>Documentos</h3>
+          <h3><?php echo $vantagens['titulovantagem'] ?> </h3>
           <p>Verificação de todos os documentos necessários para efetuar a viagem</p>
         </div>
 
@@ -117,7 +120,7 @@
           <h3>Turismo</h3>
           <p>Temos guias para que seu turismo seja o melhor possível sempre</p>
         </div>
-
+        <?php } } ?>
       </div>
       <a href="planos.html" class="btn btn-outline-secondary mt-4">Comprar Planos</a>
   </section>
